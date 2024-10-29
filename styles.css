@@ -1,0 +1,21 @@
+.hero-container {
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.hero-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem;
+}
+.hero-div img{
+  max-width: 25%;
+  height: auto;
+}
