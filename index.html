@@ -1,22 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rock Paper Scissors</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <main class="hero-container">
-    <section class="hero-section">
-      
-      <div class="hero-div">
-        <img src="./public/images/rock.png" class="rock">
-        <img src="./public/images/paper.png" class="paper">
-        <img src="./public/images/scissors.png" class="scissors">
-      </div>
-    </section>
-  </main>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="hero-container">
+      <h1></h1>
+      <section class="ai-section">
+        <div class="ai-div">
+          <img
+            src="./public/images/card.png"
+            class="animate__animated"
+            id="1"
+          />
+          <img
+            src="./public/images/card.png"
+            class="animate__animated"
+            id="2"
+          />
+          <img
+            src="./public/images/card.png"
+            class="animate__animated"
+            id="3"
+          />
+        </div>
+      </section>
+      <section class="content-section" id="content"></section>
+      <section class="hero-section">
+        <div class="hero-div">
+          <button>
+            <img
+              src="./public/images/rock.png"
+              id="rock"
+              data-selection="rock"
+            />
+          </button>
+          <button>
+            <img
+              src="./public/images/paper.png"
+              id="paper"
+              data-selection="paper"
+            />
+          </button>
+          <button>
+            <img
+              src="./public/images/scissors.png"
+              id="scissors"
+              data-selection="scissors"
+            />
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
