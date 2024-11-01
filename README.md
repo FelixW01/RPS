@@ -1,6 +1,7 @@
 # Rock Paper Scissors
 
 ## Live Website 
+https://felixw01.github.io/RPS/
 
 ## Description
 Welcome to a RPS! a web application where you can pick your weapons(rock, paper or scissors) to battle with an AI and claim victory. This application was created for the purpose of deepening my understanding in JavaScript conditionals, functions and DOM manipulation.
@@ -12,6 +13,8 @@ Welcome to a RPS! a web application where you can pick your weapons(rock, paper 
 - [Questions](#questions)
 
 ## App Demo
+https://github.com/user-attachments/assets/9af62809-15d5-4552-8b72-47459369b63b
+
 
 
 
