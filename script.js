@@ -3,14 +3,30 @@ const contentEl = document.getElementById('content')
 const aiArr = ['rock', 'paper', 'scissors']
 const aiCardArr = ["./public/images/rock.png", "./public/images/paper.png", "./public/images/scissors.png"]
 const aiBack = './public/images/card.png'; 
-let rounds = 1
+let win = 0;
+let lose = 0;
+let rounds = 1;
 const aiCards = document.querySelectorAll('.ai-card');
+
+
+// Resets game info when reset button is clicked, trigger resetCards animation and reset game into initialize state.
+function resetGame() {
+    win = 0;
+    lose = 0;
+    rounds = 1;
+    resetCards()
+    initializeGame()
+}
 
 // Initializes rounds, evoked on page load
 function initializeGame() {
 contentEl.innerHTML = `<p></p>
         <h1>Game ${rounds}</h1>
-        <h2></h2>
+        <div class="score-div"> 
+        <h2>W:${win} L:${lose}</h2> 
+        <button onClick="resetGame()">Reset</button>
+        </div>
+        <h3></h3>
         <p></p>`
 }
 
@@ -64,17 +80,24 @@ function makeSelection(selection) {
     // Else if the outcome[selection], this code matches the user selection to the key of outcome and if the value of said key is equal to aiSelection then you've won
     } else if (outcomes[selection] === aiSelection) {
         outcomeMessage = "You Won!"
+        win++
     // Every other scenario ends in a loss
     } else {
+        lose++
     }
     const template = `
         <p>${aiSelection.toUpperCase()}</p>
         <h1>Game ${rounds}</h1>
+        <div class="score-div"> 
+        <h2>W:${win} L:${lose}</h2> 
+        <button onClick="resetGame()">Reset</button>
+        </div>
         <h3>${outcomeMessage}</h3>
         <p>${selection.toUpperCase()}</p>`
 
         contentEl.innerHTML = template
     rounds++
 }
+
 
 initializeGame()
