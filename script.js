@@ -101,3 +101,23 @@ function makeSelection(selection) {
 
 
 initializeGame()
+
+
+/*
+Create AI
+- Array of choices, RNG
+
+Create user options
+- QuerySelectorAll, click listener
+- Get button's details as user move
+
+Conditionals on who wins
+- if rock === rock : tie, etc
+
+Update game info
+- Increment win/loss/rounds ++
+
+Reset game
+- Reset all game info, set them to default and reset game
+
+*/
