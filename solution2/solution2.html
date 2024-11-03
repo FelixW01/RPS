@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <main class="hero-container">
+      <section class="ai-section">
+        <div class="ai-div">
+          <img
+            src="../public/images/card.png"
+            class="ai-card animate__animated"
+            id="1"
+          />
+          <img
+            src="../public/images/card.png"
+            class="ai-card animate__animated"
+            id="2"
+          />
+          <img
+            src="../public/images/card.png"
+            class="ai-card animate__animated"
+            id="3"
+          />
+        </div>
+      </section>
+      <section class="content-section" id="content"></section>
+      <section class="hero-section">
+        <div>
+          <input
+            type="text"
+            id="userInput"
+            placeholder="rock, paper, scissors"
+          />
+          <button type="button" id="playButton">Play</button>
+          <p id="message"></p>
+        </div>
+      </section>
+    </main>
+    <script src="solution2.js"></script>
+  </body>
+</html>
